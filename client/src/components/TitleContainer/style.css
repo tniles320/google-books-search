@@ -1,0 +1,30 @@
+#title-container {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 80px
+}
+
+h1 span span {
+    font-size: 4rem;
+    color: blue;
+}
+
+h1 span span:nth-child(2) { 
+    color: red;
+}
+
+h1 span span:nth-child(3) { 
+    color: yellow;
+}
+
+h1 span span:nth-child(5) { 
+    color: green;
+}
+
+h1 span span:nth-child(6) { 
+    color: red;
+}
+
+h1 span span:nth-child(7) { 
+    color: rgb(46, 44, 44);
+}
