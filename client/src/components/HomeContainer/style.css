@@ -3,6 +3,7 @@
     justify-content: space-evenly;
     max-width: 800px;
     margin: auto;
+    margin-top: 100px;
 }
 
 .link-btn {
@@ -25,7 +26,6 @@
 .link-btn:hover {
     background-color: rgba(85, 11, 155, 0.582);
     box-shadow:  rgba(85, 11, 155, 0.582) 0 0 1px 0.5px;
-
     color: black;
     text-decoration: underline;
 }
