@@ -20,6 +20,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooks", {
   useFindAndModify: false,
 });
 
+// using api routes
 app.use(routes);
 
 app.listen(PORT, () => {

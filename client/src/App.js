@@ -1,7 +1,32 @@
-import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./pages/Home";
+import SearchBooks from "./pages/SearchBooks";
+import SavedBooks from "./pages/SavedBooks";
+import NoMatch from "./pages/NoMatch";
+import API from "./utils/API";
 
 function App() {
-  return <div></div>;
+  return (
+    <Router>
+      <div>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/search-books">
+            <SearchBooks />
+          </Route>
+          <Route exact path="/saved-books">
+            <SavedBooks />
+          </Route>
+          <Route>
+            <NoMatch />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+  );
 }
 
 export default App;
