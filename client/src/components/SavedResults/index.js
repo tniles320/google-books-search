@@ -12,7 +12,7 @@ function SavedResults(props) {
     <div className="saved-results">
       <div className="results-headline">
         <h3>{book.title}</h3>
-        <div className="results-buttons">
+        <div className="saved-results-buttons">
           <button onClick={() => handleBookLink(book.link)}>Book Info</button>
           <button onClick={() => handleBookDelete(book._id)}>
             Delete Book
@@ -20,8 +20,9 @@ function SavedResults(props) {
         </div>
       </div>
       <div className="results-authors">
+        Authors: <br></br>
         {book.authors.map((author, index) => {
-          return <p key={index}>{author}</p>;
+          return <h4 key={index}>{author}</h4>;
         })}
       </div>
       <div className="results-main">

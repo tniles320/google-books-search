@@ -12,7 +12,7 @@ function DisplayContainer(props) {
 
   return (
     <div id="display-container">
-      <label htmlFor="results-container">Results</label>
+      <label htmlFor="results-container">Results:</label>
       <div id="results-container">
         {books.map((book, index) => {
           return window.location.pathname === "/search-books" ? (

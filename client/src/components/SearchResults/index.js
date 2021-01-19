@@ -19,7 +19,7 @@ function SearchResults(props) {
     <div className="search-results">
       <div className="results-headline">
         <h3>{bookObj.title}</h3>
-        <div className="results-buttons">
+        <div className="search-results-buttons">
           <button onClick={() => handleBookLink(bookObj.link)}>
             Book Info
           </button>
@@ -27,8 +27,9 @@ function SearchResults(props) {
         </div>
       </div>
       <div className="results-authors">
+        Authors: <br></br>
         {bookObj.authors.map((author, index) => {
-          return <p key={index}>{author}</p>;
+          return <h4 key={index}>{author}</h4>;
         })}
       </div>
       <div className="results-main">
