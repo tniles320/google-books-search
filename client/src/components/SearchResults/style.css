@@ -1,0 +1,14 @@
+.search-results {
+    border: solid 1px black;
+    border-radius: 25px;
+}
+
+.results-headline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.results-main {
+    display: flex;
+    justify-content: space-evenly;
+}

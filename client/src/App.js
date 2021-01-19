@@ -4,7 +4,6 @@ import Home from "./pages/Home";
 import SearchBooks from "./pages/SearchBooks";
 import SavedBooks from "./pages/SavedBooks";
 import NoMatch from "./pages/NoMatch";
-import API from "./utils/API";
 
 function App() {
   return (

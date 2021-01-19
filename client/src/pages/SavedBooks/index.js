@@ -1,7 +1,12 @@
 import React from "react";
+import TitleContainer from "../../components/TitleContainer";
 
 function SavedBooks() {
-  return <div></div>;
+  return (
+    <div>
+      <TitleContainer />
+    </div>
+  );
 }
 
 export default SavedBooks;
