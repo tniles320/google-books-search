@@ -1,0 +1,23 @@
+{
+  "name": "google-books-search",
+  "version": "1.0.0",
+  "description": "React-based Google Books Search app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tniles320/google-books-search.git"
+  },
+  "author": "Taylor Niles",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tniles320/google-books-search/issues"
+  },
+  "homepage": "https://github.com/tniles320/google-books-search#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.11.12"
+  }
+}
