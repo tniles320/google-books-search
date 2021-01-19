@@ -3,7 +3,7 @@ import API from "../../utils/API";
 import "./style.css";
 
 function SearchResults(props) {
-  const { book } = props;
+  const { book, handleBookLink } = props;
   const bookObj = {
     title: book.title,
     authors: book.authors,
@@ -12,22 +12,23 @@ function SearchResults(props) {
     link: book.infoLink,
   };
   const handleBookSave = async (data) => {
-    await API.saveBook(data).then((res) => {
-      console.log(res);
-    });
+    await API.saveBook(data);
   };
+
   return (
     <div className="search-results">
       <div className="results-headline">
         <h3>{bookObj.title}</h3>
         <div className="results-buttons">
-          <button href={bookObj.link}>Book Info</button>
+          <button onClick={() => handleBookLink(bookObj.link)}>
+            Book Info
+          </button>
           <button onClick={() => handleBookSave(bookObj)}>Save Book</button>
         </div>
       </div>
       <div className="results-authors">
-        {bookObj.authors.map((author) => {
-          return <p>{author}</p>;
+        {bookObj.authors.map((author, index) => {
+          return <p key={index}>{author}</p>;
         })}
       </div>
       <div className="results-main">

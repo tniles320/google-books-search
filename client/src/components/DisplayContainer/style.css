@@ -1,4 +1,10 @@
 #display-container {
     border: solid 2px black;
     border-radius: 25px;
+    min-height: 200px;
+    margin: 20px 20px 0 20px;
+}
+
+#display-container label {
+    margin-left: 30px;
 }

@@ -2,14 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 
-function HomeContainer(props) {
-  const { handleSearchBooks, handleSavedBooks } = props;
+function HomeContainer() {
   return (
     <div id="link-buttons">
-      <Link to="/search-books" className="link-btn" onClick={handleSearchBooks}>
+      <Link to="/search-books" className="link-btn">
         Search for Books
       </Link>
-      <Link to="/saved-books" className="link-btn" onClick={handleSavedBooks}>
+      <Link to="/saved-books" className="link-btn">
         View saved Books
       </Link>
     </div>

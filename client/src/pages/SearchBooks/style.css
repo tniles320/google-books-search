@@ -1,0 +1,22 @@
+.search-save-btn-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#saved-link {
+    text-align: center;
+    font: bold 1.2rem Arial;
+    background-color: rgba(0, 0, 209, 0.884);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    height: 24px;
+    width: 140px;
+    padding: 4px 4px 0px 4px;
+    box-shadow:  rgba(0, 0, 209, 0.884) 0 0 1px 0.5px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+}
