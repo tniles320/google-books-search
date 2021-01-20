@@ -1,5 +1,6 @@
 .search-results {
-    border: solid 1px black;
+    box-shadow: black 1px 1px 4px 2px;
+    background-color: rgba(0, 0, 209, 0.05);
     border-radius: 25px;
     margin: 10px;
     padding: 10px;
@@ -22,6 +23,8 @@
 .results-image {
     padding: 10px;
     border-radius: 25px;
+    max-height: 195px;
+    max-width: 128px;
 }
 
 .results-description {
@@ -58,4 +61,12 @@
 
 .search-results-buttons button:focus {
     outline: none;
+}
+
+@media only screen and (max-width: 576px) {
+
+    .results-main {
+        flex-direction: column;
+    }
+
 }
