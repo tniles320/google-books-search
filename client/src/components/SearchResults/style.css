@@ -51,8 +51,7 @@
 }
 
 .search-results-buttons button:hover {
-    background-color: rgba(85, 11, 155, 0.582);
-    box-shadow:  rgba(85, 11, 155, 0.582) 0 0 1px 0.5px;
+    transform: scale(1.2);
     color: black;
     text-decoration: underline;
 }
