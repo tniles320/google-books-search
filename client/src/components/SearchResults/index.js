@@ -12,7 +12,9 @@ function SearchResults(props) {
     link: book.infoLink,
   };
   const handleBookSave = async (data) => {
-    await API.saveBook(data);
+    await API.saveBook(data).then(() => {
+      alert("Book Saved!");
+    });
   };
 
   return (

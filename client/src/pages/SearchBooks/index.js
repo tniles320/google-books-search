@@ -8,6 +8,8 @@ import "./style.css";
 
 function SearchBooks() {
   const [searchBooks, setSearchBooks] = useState([]);
+
+  // searches for book from user input
   const handleBookSearch = (event) => {
     event.preventDefault();
     const book = document.getElementById("search-input").value;

@@ -6,7 +6,10 @@ function SavedResults(props) {
   const { book, handleBookLink } = props;
 
   const handleBookDelete = async (data) => {
-    await API.deleteBook(data).then(() => {});
+    await API.deleteBook(data).then(() => {
+      alert("Book Deleted!");
+      window.location.reload();
+    });
   };
   return (
     <div className="saved-results">

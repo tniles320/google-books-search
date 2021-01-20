@@ -21,6 +21,10 @@ form label {
     height: 30px;
 }
 
+#search-input:focus {
+    outline: none;
+}
+
 #search-btn {
     font: bold 1rem Arial;
     background-color: rgba(0, 0, 209, 0.884);
@@ -42,4 +46,8 @@ form label {
     box-shadow:  rgba(85, 11, 155, 0.582) 0 0 1px 0.5px;
     color: black;
     text-decoration: underline;
+}
+
+#search-btn:focus {
+    outline: none;
 }
