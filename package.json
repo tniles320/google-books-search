@@ -11,7 +11,8 @@
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build",
-    "seed": "node seeders/seed.js"
+    "seed": "node seeders/seed.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -24,10 +25,14 @@
   },
   "homepage": "https://github.com/tniles320/google-books-search#readme",
   "dependencies": {
+    "axios": "^0.21.1",
     "concurrently": "^5.3.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^5.11.12",
     "nodemon": "^2.0.7"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
   }
 }
